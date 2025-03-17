@@ -325,7 +325,7 @@ export default function KahootQuiz() {
                     <Card className="border-0 shadow-xl">
                         <CardHeader className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-t-lg">
                             <CardTitle className="text-center text-3xl font-bold text-white">
-                                Trivia Quiz
+                                Trivia
                             </CardTitle>
                         </CardHeader>
                         <CardContent className="p-6 space-y-4">

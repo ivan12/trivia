@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Trivia Quiz',
+    title: 'Trivia',
     description: 'An interactive multiplayer quiz game inspired by Kahoot',
     generator: 'v0.dev',
 };
