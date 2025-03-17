@@ -8,24 +8,8 @@ import { Progress } from "@/components/ui/progress"
 import { motion } from "framer-motion"
 import { CheckCircle, XCircle, Trophy, Users, Clock, ArrowRight } from "lucide-react"
 import confetti from "canvas-confetti"
-import { initializeApp } from "firebase/app"
-import { getDatabase, ref, set, onValue, off, update } from "firebase/database"
-
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDW5S-ji35j9bQUizwVlA49QGuIR_eTJ58",
-  authDomain: "trivia-e5fe1.firebaseapp.com",
-  databaseURL: "https://trivia-e5fe1-default-rtdb.firebaseio.com",
-  projectId: "trivia-e5fe1",
-  storageBucket: "trivia-e5fe1.firebasestorage.app",
-  messagingSenderId: "461452457572",
-  appId: "1:461452457572:web:7c94129bd5ac66bf38d171",
-  measurementId: "G-5LXR3S626H",
-}
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig)
-const database = getDatabase(app)
+import { database } from "@/lib/firebase"
+import { ref, set, onValue, off, update } from "firebase/database"
 
 // Color options for answer buttons
 const colors = ["bg-red-500", "bg-blue-500", "bg-yellow-500", "bg-green-500"]
