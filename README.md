@@ -31,7 +31,7 @@ A real-time multiplayer quiz application inspired by Kahoot, built with Next.js 
 
 ```shellscript
 git clone git@github.com:ivan12/trivia.git
-cd kahoot-firebase
+cd trivia
 ```
 
 2. Install dependencies:
@@ -97,6 +97,7 @@ app/
     └── game/               # Player game view
 lib/
 └── firebase.ts            # Firebase configuration
+.env.local
 ```
 
 ## Firebase Setup
