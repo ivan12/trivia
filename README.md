@@ -2,6 +2,9 @@
 
 A real-time multiplayer quiz application inspired by Kahoot, built with Next.js and Firebase Realtime Database.
 
+## Demo
+https://trivia-ten-snowy.vercel.app/
+
 ## Features
 
 - **Real-time Multiplayer**: Host games and let players join using a unique game ID
