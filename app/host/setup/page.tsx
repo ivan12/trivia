@@ -18,7 +18,7 @@ import { Switch } from '@/components/ui/switch';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { motion } from 'framer-motion';
 import { Users, Trash2, Edit, Save, ArrowRight, Copy, Check } from 'lucide-react';
-import { initializeApp } from 'firebase/app';
+import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getDatabase, ref, set, onValue, off } from 'firebase/database';
 
 // Replace Your Firebase configuration HERE!
@@ -33,8 +33,11 @@ const firebaseConfig = {
     measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Inicializa apenas se ainda não houver uma instância do Firebase
+const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+
+export { app };
+
 const database = getDatabase(app);
 
 // Predefined question sets
